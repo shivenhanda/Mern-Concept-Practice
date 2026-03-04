@@ -1,0 +1,26 @@
+*{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg,rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%);
+}
+.users{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.users label{
+    text-align: center;
+}
+.users input{
+    text-align: center;
+    padding:5px;
+    border-radius: 10px;
+    border:2px solid black;
+}
