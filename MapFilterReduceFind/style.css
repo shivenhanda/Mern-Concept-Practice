@@ -1,26 +1,54 @@
-*{
+* {
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+    margin: 0;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%);
+}
+
+.users,
+.sumUser,
+.activeUser {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    gap: 10px;
+}
+
+.users select {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label,
+p {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.searchUserId{
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(90deg,rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%);
-}
-.users{
-    display: flex;
     flex-direction: column;
     gap:10px;
-}
-.users label{
-    text-align: center;
-}
-.users input{
-    text-align: center;
-    padding:5px;
-    border-radius: 10px;
-    border:2px solid black;
 }

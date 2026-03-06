@@ -8,10 +8,34 @@
 </head>
 <body>
     <div class="users">
-        <label for="user">Enter User Details</label>
-        <input type="text" id="user" placeholder="Enter User Details" required>
-        <button>Add User</button>
+        <label for="user">Enter User Name</label>
+        <input type="text" id="user" placeholder="Enter User Name" required>
+        <label for="age">Enter User Age</label>
+        <input type="number" id="age" placeholder="Enter User Age" min="18" required>
+        <label for="salary">Enter User Salary</label>
+        <input type="number" id="salary" placeholder="Enter User Salary" required>
+        <label for="status">Enter User Status</label>
+        <select name="status" id="status">
+            <option value="Active">Active</option>
+            <option value="No Active">No Active</option>
+        </select>
+        <button onclick="addUser();">Add User</button>
     </div>
+    <div class="searchUserId">
+        <label for="id">Enter User Id</label>
+        <input type="number" id="id" placeholder="Enter User Id" required>
+        <button onclick="searchById();">Search User by Id</button>
+        <p id="message"></p>
+    </div>
+    <div class="sumUser">
+        <button onclick="sumAll();">Sum Of all Users When Status Active</button>
+        <p id="summessage"></p>
+    </div>
+    <div class="activeUser">
+        <button onclick="ActiveAll();">Show Active Users</button>
+        <div id="Activemessage"></div>
+    </div>
+    <button onclick="deleteUsers();">Delete All Data</button>
     <script src="script.js"></script>
 </body>
 </html>
