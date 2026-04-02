@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Template Engine</title>
+</head>
+<body>
+    <h1>Implement EJS Template Engine</h1>
+    <input type="text" name="username" id="username"  required>
+    <button>View</button>
+    <script>
+        let button=document.querySelector("button")
+        button.addEventListener("click",()=>{
+            let username=document.querySelector("#username").value.trim()
+            if(username){
+                let element=document.createElement("a")
+                element.href=`/profile/${username}`
+                element.textContent=`Go to ${username}`
+                document.body.appendChild(element)
+            }
+        })
+    </script>
+</body>
+</html>
