@@ -1,0 +1,12 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #c8e5ff;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
